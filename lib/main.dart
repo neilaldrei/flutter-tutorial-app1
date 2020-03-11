@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -14,28 +15,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {
-            print("Banana milkshake with beef");
-          },
-          icon: Icon(Icons.alternate_email),
-          color: Colors.amber[600]
-        )
-//        child: RaisedButton.icon(
-//          onPressed: () { },
-//          icon: Icon(
-//            Icons.alternate_email,
-//          ),
-//          label: Text("Labelers"),
-//          color: Colors.lime,
-//        )
-//        child: Icon(
-//          Icons.airport_shuttle,
-//          color: Colors.lightBlue,
-//          size: 50.0,
-//        )
+      body: Padding(
+        padding: EdgeInsets.all(90.0),
+        child: Text("ZA WARUDO")
       ),
+//      body: Container(
+//        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
+//        margin: EdgeInsets.all(20.0),
+//        color: Colors.grey[200],
+//        child: Text("Epic gamer!")
+//      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('Click Clack'),
