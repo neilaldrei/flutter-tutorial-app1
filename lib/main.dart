@@ -15,7 +15,26 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image.asset('assets/full-moon.jpg')
+        child: IconButton(
+          onPressed: () {
+            print("Banana milkshake with beef");
+          },
+          icon: Icon(Icons.alternate_email),
+          color: Colors.amber[600]
+        )
+//        child: RaisedButton.icon(
+//          onPressed: () { },
+//          icon: Icon(
+//            Icons.alternate_email,
+//          ),
+//          label: Text("Labelers"),
+//          color: Colors.lime,
+//        )
+//        child: Icon(
+//          Icons.airport_shuttle,
+//          color: Colors.lightBlue,
+//          size: 50.0,
+//        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
