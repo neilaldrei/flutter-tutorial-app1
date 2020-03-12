@@ -15,23 +15,64 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Text('hello world'),
-          FlatButton(
-            onPressed: () {},
-            color: Colors.amber,
-            child: Text('Click Me')
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.blue,
+                child: Text('First Row')
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.green,
+                child: Text('Second Row')
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.red,
+                child: Text('Third Row')
+              ),
+            ],
           ),
           Container(
+            padding: EdgeInsets.all(20.0),
             color: Colors.cyan,
+            child: Text('First')
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.pink,
+            child: Text('Second')
+          ),
+          Container(
             padding: EdgeInsets.all(40.0),
-            child: Text('Inside Container')
-          )
+            color: Colors.indigo,
+            child: Text('Third')
+          ),
         ],
       ),
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //     Text('hello world'),
+      //     FlatButton(
+      //       onPressed: () {},
+      //       color: Colors.amber,
+      //       child: Text('Click Me')
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(40.0),
+      //       child: Text('Inside Container')
+      //     )
+      //   ],
+      // ),
       // body: Padding(
       //   padding: EdgeInsets.all(90.0),
       //   child: Text("ZA WARUDO")
