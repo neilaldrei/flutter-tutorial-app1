@@ -18,31 +18,35 @@ class Home extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.stretch,
+        // Flutter outline and Shorcuts (Press the damn light bulb)
         children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: Text('First')
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Container(
                 padding: EdgeInsets.all(20.0),
-                color: Colors.blue,
-                child: Text('First Row')
-              ),
-              Container(
-                padding: EdgeInsets.all(20.0),
                 color: Colors.green,
                 child: Text('Second Row')
               ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  padding: EdgeInsets.all(20.0),
+                  color: Colors.red,
+                  child: Text('Third Row')
+                ),
+              ),
               Container(
                 padding: EdgeInsets.all(20.0),
-                color: Colors.red,
-                child: Text('Third Row')
+                color: Colors.blue,
+                child: Text('First Row')
               ),
             ],
-          ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('First')
           ),
           Container(
             padding: EdgeInsets.all(30.0),
